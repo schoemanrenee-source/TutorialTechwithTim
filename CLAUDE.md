@@ -8,21 +8,25 @@ A collection of standalone web apps — each is a single self-contained HTML fil
 
 ## Git Workflow
 
-All changes must be committed and pushed to GitHub after every session.
+**Commit and push after every change — no exceptions.** This ensures work is never lost and the repo always reflects the current state of the project.
 
 - Remote: https://github.com/schoemanrenee-source/TutorialTechwithTim
 - Branch: `main`
 - Git identity configured locally (not globally): `schoemanrenee-source`
 
-Commit message style: imperative subject line, bullet-point body listing what changed per file.
+After completing any edit — no matter how small — run:
 
 ```
 git add <files>
 git commit -m "short description
 
-- file.html: what changed"
+- file.html: what changed
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
 git push
 ```
+
+Commit message style: imperative subject line, bullet-point body listing what changed per file. Never batch unrelated changes into one commit.
 
 ## Architecture
 
